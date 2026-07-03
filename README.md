@@ -12,7 +12,7 @@ Implementar um sistema simples para gerenciamento de reservas de salas utilizand
 - Consulta de salas disponíveis
 - Reserva de salas
 - Bloqueio de reservas duplicadas
-- Consulta de histórico de reservas
+- Consulta do histórico de reservas
 - Tratamento de exceções específicas
 
 ## Estrutura
@@ -26,6 +26,7 @@ src/
 tests/
     test_sistema_reservas.py
 
+demo.py
 pytest.ini
 conftest.py
 ```
@@ -41,7 +42,13 @@ conftest.py
 Clone o repositório:
 
 ```bash
-git clone <url>
+git clone https://github.com/viviangbrito/Recupera-oPytest.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd Recupera-oPytest
 ```
 
 Instale as dependências:
@@ -50,26 +57,41 @@ Instale as dependências:
 pip install pytest pytest-cov
 ```
 
-## Executando os testes
+## Executando uma demonstração
+
+O arquivo `demo.py` executa uma demonstração das principais funcionalidades do sistema, incluindo:
+
+- Cadastro de aluno
+- Consulta de salas disponíveis
+- Realização de reserva
+- Consulta das salas após a reserva
+- Consulta do histórico de reservas
+
+Execute com:
+
+```bash
+python demo.py
+```
+
+## Executando os testes automatizados
 
 ```bash
 python -m pytest -v
 ```
 
-## Gerando cobertura
+## Gerando o relatório de cobertura
 
 ```bash
 python -m pytest --cov=src --cov-report=term-missing
 ```
 
-
-## Resultado
+## Resultado esperado
 
 - 11 testes automatizados
 - 11 testes aprovados
 - Cobertura de código: 100%
 
-## Organização
+## Organização do Projeto
 
 ```
 src/
