@@ -53,14 +53,15 @@ pip install pytest pytest-cov
 ## Executando os testes
 
 ```bash
-pytest -v
+python -m pytest -v
 ```
 
 ## Gerando cobertura
 
 ```bash
-pytest --cov=src --cov-report=term-missing
+python -m pytest --cov=src --cov-report=term-missing
 ```
+
 
 ## Resultado
 
